@@ -1,0 +1,11 @@
+#Virtual environment
+venv/
+
+#Environment vars
+.env
+
+#Python cache files
+__pycache__/
+*.pyc
+
+.DS_Store

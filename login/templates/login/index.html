@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form method="post">
+            {% csrf_token %}
+
+            {{ form.email.label_tag }}
+            {{ form.email}}
+
+            <br>
+
+            {{ form.password.label_tag }}
+            {{ form.password }}
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
